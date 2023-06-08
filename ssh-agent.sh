@@ -1,3 +1,5 @@
+# Add this to the end of .zshrc
+
 trap "echo > /dev/null" INT
 eval "$(ssh-agent -s)" > /dev/null
 if ! ssh-add ~/.ssh/id_ed25519; then
