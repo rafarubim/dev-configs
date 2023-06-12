@@ -1,2 +1,3 @@
-# scripts
-Useful shell scripts
+# dev-configs
+
+Useful scripts and configuration for developer environment.
