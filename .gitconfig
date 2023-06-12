@@ -1,0 +1,30 @@
+# Copy this to your OS home directory
+
+[user]
+#   signingKey = <Your key here>
+#   name = <Full name here>
+#   email = <Email here>
+[commit]
+    gpgSign = true
+[tag]
+    forceSignAnnotated = true
+    gpgSign = true
+[core]
+#   sshCommand = <Windows only. Path to OpenSSH - e.g. "C:/Windows/System32/OpenSSH/ssh.exe">
+    editor = code --wait
+[pull]
+  rebase = true
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+  lol = log --graph --decorate --pretty=tformat:'%C(blue)%h%Creset%C(yellow bold)%d%Creset %s %C(green)(%ar)%Creset %C(cyan)%an%Creset'
+  st = status
+  co = checkout
+  br = branch
+  ci = commit
+  a = add
+  last = log -n 1 --
+[gpg]
+#   program = <Linux/OS X only. "gpg"> <Windows only. Path to GPG - e.g. "C:/Program Files (x86)/GnuPG/bin/gpg.exe">
