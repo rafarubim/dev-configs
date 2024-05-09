@@ -34,4 +34,22 @@
 
 - Open your `~/.zshrc` and search for the `ZSH_THEME` variable definition. Change its value to `spaceship`: `ZSH_THEME="spaceship"`
 
-- TODO
+- Copy the contents of `spaceship-config.sh` to the end of `~/.zshrc`.
+
+- Clone the _Syntax Highlighting_ plugin to the _Oh my Zsh_ custom plugins folder: `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+
+- Clone the Zsh Autosuggestions plugin to the _Oh my Zsh_ custom plugins folder: `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+
+- Open your `~/.zshrc` and search for the `plugins` variable definition. Add the cloned plugins to this array:
+
+```sh
+plugins=(
+  # [previous plugins...]
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+```
+
+- Reload the shell with `source ~/.zshrc`.
+
+- All set! =)
