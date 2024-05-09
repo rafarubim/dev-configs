@@ -12,7 +12,10 @@
 
 - Open a new instance of the terminal with _ZSH_.
 
-- Create an `id_ed25519` key pair using `OpenSSH` (using your github email).
+- Create an `id_ed25519` key pair using `OpenSSH` (with your GitHub email). Set a password for the private key.
+
+- Configure your system to automatically access the private key with a system vault:
+  - OS X: copy the contents of `ssh-config-osx` to the file `~/.ssh/config` (create this file if it doesn't exist).
 
 - Add the commands in `ssh-agent.sh` to the end of `~/.zshrc`.
 
