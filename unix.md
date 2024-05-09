@@ -19,8 +19,12 @@
 
 - Configure your shell to auto-start `ssh-agent` when opened:
   - OS X: add the commands in `ssh-agent-osx.sh` to the end of `~/.zshrc`.
+ 
+- Copy your public key with `pbcopy < ~/.ssh/id_ed25519.pub` and add it to the GitHub website as `Authentication Key`.
 
 - Copy this project's `.gitconfig` to the `~` directory. Replace the file comments with appropriate values.
+
+- Reload the shell with `source ~/.zshrc`. This is the only time you must type your SSH private key password.
 
 - Run the _Oh my Zsh_ install command given by their [web page](https://ohmyz.sh/#install).
 
