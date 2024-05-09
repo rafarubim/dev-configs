@@ -28,4 +28,10 @@
 
 - Run the _Oh my Zsh_ install command given by their [web page](https://ohmyz.sh/#install).
 
+- Clone the _Spaceship Prompt_ repo to the _Oh my Zsh_ custom themes folder and symlink it to that folder:
+  - `git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1`.
+  - `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
+
+- Open your `~/.zshrc` and search for the `ZSH_THEME` variable definition. Change its value to `spaceship`: `ZSH_THEME="spaceship"`
+
 - TODO
