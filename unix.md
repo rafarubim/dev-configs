@@ -50,6 +50,10 @@ plugins=(
 )
 ```
 
+- Install the Fira Code font in your OS by following [their instructions](https://github.com/tonsky/FiraCode/wiki/Installing)
+
+- Configure your terminal to use the Fira Code font for the text in its default profile
+
 - Reload the shell with `source ~/.zshrc`.
 
 - All set! =)
