@@ -24,7 +24,7 @@
   - WSL with Windows OpenSSH: the only special configuration on WSL side is in `.gitconfig` (will be added later). ⚠️ You must open PowerShell whenever you need to auto-start the agent again.
  
 - Copy your public key with `pbcopy < ~/.ssh/id_ed25519.pub` and add it to the GitHub website as `Authentication Key`.
-  - You may skip this step if you use Windows WSL with Windows-side key pair.
+  - You may skip this step if you use WSL with Windows OpenSSH.
 
 - Copy this project's `.gitconfig` to the `~` directory. Replace the file comments with appropriate values.
 
