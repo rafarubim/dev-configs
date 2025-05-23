@@ -10,8 +10,10 @@
 
 - Run the commands in `ssh-agent.ps1` once.
 
+- ⚠️ Even though the previous commands make the SSH-AGENT auto-start with the computer, sometimes the key must be added to the agent again. This will happen on every PowerShell startup.
+
 - Configure PowerShell to auto-start ssh-agent when opened:
-  - Run `$PROFILE` in PowerShell to find the path of your `Microsoft.PowerShell_profile.ps1` profile file.
+  - Run `$PROFILE` in PowerShell to find the path of the `Microsoft.PowerShell_profile.ps1` profile file.
   - Add the commands in `ssh-agent-windows.ps1` to the end of the file `Microsoft.PowerShell_profile.ps1`.
 
 - Install `git` without installing the _git terminal_.
