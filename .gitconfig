@@ -1,7 +1,7 @@
 # Copy this to your OS home directory
 
 [user]
-#   signingKey = <Your key here>
+#   signingKey = <Your GPG key here - or follow this documentation to generate and configure a key: https://docs.google.com/presentation/d/1jX9His5WH9PeMsEJAny3ighFCs_7uyt3zwvthEIIdUY>
 #   name = <Full name here>
 #   email = <Email here>
 [commit]
