@@ -13,15 +13,15 @@
 - Open a new instance of the terminal with _ZSH_.
 
 - Create an `id_ed25519` key pair using `OpenSSH` (with your GitHub email). Set a password for the private key.
-  - You may skip this step if you use Windows WSL with Windows-side key pair.
+  - You may skip this step if you use WSL with Windows OpenSSH.
 
 - Configure your system to auto-access the private key with a system vault:
   - OS X: copy the contents of `ssh-config-osx` to the file `~/.ssh/config` (create this file if it doesn't exist).
-  - You may skip this step if you use Windows WSL with Windows-side key pair.
+  - You may skip this step if you use WSL with Windows OpenSSH.
 
 - Configure your shell to auto-start `ssh-agent` when opened:
   - OS X: add the commands in `ssh-agent-osx.sh` to the end of `~/.zshrc`.
-  - Windows WSL with Windows-side key pair: add the commands in `ssh-agent-wsl.sh` to the end of `~/.zshrc`. ⚠️ You must always open PowerShell before the WSL shell to guarantee the key is imported correctly.
+  - WSL with Windows OpenSSH: the only special configuration on WSL side is in `.gitconfig` (will be added later). ⚠️ You must open PowerShell whenever you need to auto-start the agent again.
  
 - Copy your public key with `pbcopy < ~/.ssh/id_ed25519.pub` and add it to the GitHub website as `Authentication Key`.
   - You may skip this step if you use Windows WSL with Windows-side key pair.
