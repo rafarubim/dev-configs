@@ -10,7 +10,7 @@
     forceSignAnnotated = true
     gpgSign = true
 [core]
-#	sshCommand = <WSL with Windows OpenSSH only. WSL path to OpenSSH - e.g. "/mnt/c/Windows/System32/OpenSSH/ssh.exe">
+#   sshCommand = <WSL with Windows OpenSSH only. WSL path to OpenSSH - e.g. "/mnt/c/Windows/System32/OpenSSH/ssh.exe">
 #   sshCommand = <Windows only. Path to OpenSSH - e.g. "C:/Windows/System32/OpenSSH/ssh.exe">
     editor = code --wait
 [pull]
